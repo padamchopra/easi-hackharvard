@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="10dp">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Title"
+            android:id="@+id/title"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/title"
+            android:text="Description is what it needs"
+            android:lines="2"
+            android:textColor="@android:color/black"
+            android:id="@+id/description"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/playbackTime"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(00:00)"
+            android:layout_toRightOf="@id/title"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"/>
+
+        <android.support.design.button.MaterialButton
+            android:layout_toRightOf="@id/playbackTime"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:background="@android:color/darker_gray"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

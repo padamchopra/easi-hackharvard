@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/half_filled_background"
+    tools:context=".GestureList">
+
+    <android.support.design.card.MaterialCardView
+        android:id="@+id/easi_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:transitionName="top_card_view"
+        app:cardBackgroundColor="#eeeeee"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:spinnerMode="dropdown"
+                android:background="@drawable/outline_arrow_drop_down_24"
+                >
+
+            </Spinner>
+        <android.support.v7.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:layout_below="@id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+        </RelativeLayout>
+    </android.support.design.card.MaterialCardView>
+
+</RelativeLayout>
